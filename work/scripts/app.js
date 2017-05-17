@@ -82,6 +82,7 @@
 
   // Updates a weather card with the latest weather forecast. If the card
   // doesn't already exist, it's cloned from the template.
+
   app.updateForecastCard = function(data) {
     var dataLastUpdated = new Date(data.created);
     var sunrise = data.channel.astronomy.sunrise;
@@ -325,7 +326,7 @@
      * scenario could guess the user's location via IP lookup and then inject
      * that data into the page.
      */
-    app.updateForecastCard(initialWeatherForecast);
+    //app.updateForecastCard(initialWeatherForecast);
     app.selectedCities = [
       {key: initialWeatherForecast.key, label: initialWeatherForecast.label}
     ];
